@@ -9,3 +9,8 @@ class Account :
     document    = str
     email       = str
     password    = str 
+
+    def __init__(self, document,email,password) -> None:
+        self.document = document
+        self.email = email
+        self.password = password

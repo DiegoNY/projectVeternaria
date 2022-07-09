@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Set;
 
 public class Animal {
      int id;  
@@ -9,8 +8,9 @@ public class Animal {
      int talla ; 
                   //atributos 
                   //obligatorios
-     public Animal(String nombre ){
+     public Animal(String nombre, ArrayList<String> raza){
          this.nombre= nombre;
+         this.raza = raza;
      }
      
      void printDataAnimal()

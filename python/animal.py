@@ -8,3 +8,9 @@ class Animal :
     raza    = []
     peso    = float
     talla   = int
+    
+    def __init__(self, nombre,peso):
+        self.nombre = nombre
+        self.peso = peso 
+        
+        

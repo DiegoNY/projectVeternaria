@@ -1,5 +1,12 @@
-function Adopcion()
+class Adopcion
 {
-    this.id;
-    this.fecha;
+    constructor(fecha){
+    this.id ;
+    this.fecha = fecha ;
+    }
+
+    printDataAdopcion()
+    {
+        console.log(this.fecha);
+    }
 } 

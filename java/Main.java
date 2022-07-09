@@ -1,7 +1,7 @@
  class Main {
     public static void main(String[] args) {
         System.out.println("holaa");
-        Animal animal = new Animal("Diego");
+        Animal animal = new Animal("Diego","Perro");
         animal.id = 1;
         animal.peso = 15.0;
         animal.talla = 80;
@@ -10,7 +10,7 @@
         //ahora si :3
         animal.printDataAnimal();
         
-        Animal animal2 = new Animal("Roberto");
+        Animal animal2 = new Animal("Roberto","perro");
         animal2.id = 1;
         animal2.peso = 15.0;
         animal2.talla = 80;
