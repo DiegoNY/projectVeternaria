@@ -5,9 +5,9 @@ class Gato extends Animal{
 
     public $id;
 
-    function __construct($nombre,$talla,$peso,$raza)
+    function __construct($dueño,$nombre,$typeVacunas,$talla,$peso,$raza)
     {
-        parent:: __construct($nombre,$talla,$peso,$raza);
+        parent:: __construct($nombre,$dueño,$typeVacunas,$talla,$peso,$raza);
         $this->id;
     }
 }
