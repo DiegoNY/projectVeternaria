@@ -1,12 +1,12 @@
 <?php
 require 'animal.php';
-require 'HistotialMedico.php';
-class Conejo extends HistorialMedico {
 
-    public $nombre;
-    function __construct($id,$typeVacunas,$nombre,$talla,$peso,$raza)
+class Conejo extends Animal{
+
+     public $id;
+    function __construct($dueño,$typeVacunas,$nombre,$talla,$peso,$raza)
     {
-        parent:: __construct($id,$typeVacunas,$talla,$peso,$raza);
-        $this->nombre = $nombre;
+        parent:: __construct($nombre,$dueño,$typeVacunas,$talla,$peso,$raza);
+
     }
 }

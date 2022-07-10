@@ -1,21 +1,19 @@
 <?php
 
 use JetBrains\PhpStorm\ArrayShape;
-
-class Animal {
+require 'HistorialMedico.php';
+class Animal extends HistorialMedico{
  
     public  $id    ;  
     public  $nombre; 
-    public  $raza  ;
-    public  $talla ; 
-    public  $peso  ;  
+    public  $dueño;
  
-    public function __construct( $nombre, $talla, $peso ,$raza)
+    public function __construct( $nombre, $dueño,$typeVacunas,$talla, $peso ,$raza)
     {
-        $this->raza = $raza;
-        $this->nombre = $nombre;
-        $this->talla = $talla;
-        $this->peso = $peso;
+
+        parent:: __construct($typeVacunas,$raza,$peso,$talla);
+        $this->nombre=$nombre;
+        $this->dueño=$dueño;
     }
 
     public function printDataAnimal()
@@ -24,8 +22,9 @@ class Animal {
         echo "Nombre : $this->nombre <br/>";
         echo "Peso   : $this->talla <br/>";
         echo "Peso   : $this->talla <br/>";
-        echo "Raza   : $this->raza ";
-
+        echo "Raza   : $this->raza   ";
+        echo "Dueño  : $this->dueño ";
+        echo "Vacunas : $this->typeVunas";
         
     }
 }  

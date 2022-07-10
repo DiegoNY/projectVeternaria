@@ -1,11 +1,13 @@
 <?php
 
-class HistorialMedico {
+class HistorialMedico{
+
     public $id;
     public $typeVacunas;
     public $raza;
     public $peso;
     public $talla ;
+
     function __construct($typeVacunas,$raza,$peso,$talla)
     {
         $this->typeVacunas = $typeVacunas;
@@ -14,6 +16,4 @@ class HistorialMedico {
         $this->talla = $talla;
     }
     
-
-
 }
