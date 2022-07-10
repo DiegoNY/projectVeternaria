@@ -13,6 +13,7 @@ class HistorialMedico {
         $this->peso = $peso;
         $this->talla = $talla;
     }
+    
 
 
 }
